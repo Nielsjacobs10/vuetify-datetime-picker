@@ -46,7 +46,7 @@
             <v-card-actions>
                 <v-spacer></v-spacer>
                 <v-btn color="grey lighten-1" flat @click.native="clearHandler">{{clearText}}</v-btn>
-                <v-btn color="green darken-1" flat @click="okHandler">{{okText}}</v-btn>
+                <v-btn color="green darken-1" flat @click="handler('okHandler','dialog = false')">{{okText}}</v-btn>
             </v-card-actions>
         </v-card>
     </v-dialog>
@@ -92,7 +92,7 @@
       },
       clearText: {
         type: String,
-        default: 'CLEAR'
+        default: 'Sluit'
       },
       okText: {
         type: String,
